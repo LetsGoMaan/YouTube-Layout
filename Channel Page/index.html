@@ -91,7 +91,8 @@
                 <defs/>
                 <path id="Shape" d="M17.9005 16.4865L14.3206 12.9065L14.3196 12.9055C16.9095 9.569 16.4594 4.79387 13.2916 2.00008C10.1238 -0.793732 5.32983 -0.643494 2.34314 2.34317C-0.643555 5.32983 -0.793701 10.1238 2.00012 13.2916C4.79382 16.4594 9.56897 16.9095 12.9055 14.3195L16.4855 17.8995C16.7365 18.1597 17.1082 18.2642 17.4579 18.1729C17.8075 18.0816 18.0808 17.8088 18.1725 17.4592C18.2643 17.1096 18.1603 16.7378 17.9005 16.4865ZM8.00049 14.0005C10.1442 14.0005 12.1249 12.8569 13.1967 11.0005C14.2684 9.14412 14.2684 6.85693 13.1967 5.00052C12.1249 3.14412 10.1442 2.00052 8.00049 2.00052C4.68677 2.00052 2.00049 4.68681 2.00049 8.00052C2.00049 11.3142 4.68677 14.0005 8.00049 14.0005Z" clip-rule="evenodd" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
             </svg>
-            <img src="images/userpic.svg" alt="user picture">
+            <img class="user__pic" src="images/userpic.svg" alt="user picture">
+            <img class="dots" src="./images/dots.svg" alt="">
         </div>
     </header>
     <main class="main">
@@ -186,24 +187,202 @@
             </div>
         </aside>
         <section class="content">
-            <img class="channel__cover" src="./images/channelCover.png" alt="">
+            <div class="channel__cover">
+                <img class="main__img"  src="./images/channelCover.png" alt="">
+            </div>
             <div class="main__channel_info">
-                <div>
+                <div class="name__avatar">
                     <img class="channel__info__ava" style="width: 8rem; margin-right: 2rem" src="images/chanel2.svg" alt="">
-                    <div>
-                        <p class="name__channel">Margaret Phelps</p>
+                    <div class="main__info">
+                        <p class="main__name__channel">Margaret Phelps</p>
                         <p class="subscribers__count">245K subscribed</p>
                     </div>
                 </div>
-                <div>
-                    <img src="./images/bellButton.png" alt="">
+                <div class="alert__subscribe__button">
+                    <img class="bell__button" src="./images/bellButton.png" alt="">
                     <button class="subscribe__button">
                         <img class="red__rectangle" src="images/redRectangle.svg" alt="">
                         <p class="subscribe__button__text">Subscribe 2.3m</p>
                     </button>
                 </div>
+            </div>
+            <div class="main__channel__sections">
+                <div class="sections__list">
+                    <div><a href="#">Home</a></div>
+                    <div><a href="#">Videos</a></div>
+                    <div><a href="#">Playlists</a></div>
+                    <div class="section__list__arrowDown"><img src="./images/arrowDown.svg" alt=""></div>
+                    <div><a href="#">Channels</a></div>
+                    <div><a href="#">Discussion</a></div>
+                    <div><a href="#">About</a></div>
+                    <div><button>
+                        <svg class="search__video__icon" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <path id="Shape" d="M17.9005 16.4865L14.3206 12.9065L14.3196 12.9055C16.9095 9.569 16.4594 4.79387 13.2916 2.00008C10.1238 -0.793732 5.32983 -0.643494 2.34314 2.34317C-0.643555 5.32983 -0.793701 10.1238 2.00012 13.2916C4.79382 16.4594 9.56897 16.9095 12.9055 14.3195L16.4855 17.8995C16.7365 18.1597 17.1082 18.2642 17.4579 18.1729C17.8075 18.0816 18.0808 17.8088 18.1725 17.4592C18.2643 17.1096 18.1603 16.7378 17.9005 16.4865ZM8.00049 14.0005C10.1442 14.0005 12.1249 12.8569 13.1967 11.0005C14.2684 9.14412 14.2684 6.85693 13.1967 5.00052C12.1249 3.14412 10.1442 2.00052 8.00049 2.00052C4.68677 2.00052 2.00049 4.68681 2.00049 8.00052C2.00049 11.3142 4.68677 14.0005 8.00049 14.0005Z" clip-rule="evenodd" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>
+                    </button></div>
 
+                </div>
+            </div>
+            <div class="video__and__channels__section">
+                <div class="main__video__block">
+                    <div class="video__block__bigImg">
+                        <div class="video__image__containerBig">
+                            <img class="video__imageBig" src="images/videoCover15.png" alt="">
+                            <div class="video__rectangle__container__bigImg">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes__bigImg">7:36</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__video__name__description">
+                        <h2 class="main__video__name">Choosing The Best Audio Player<br>Software For Your Computer</h2>
+                        <p class="main__video__description">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads. </p>
+                        <p class="views__date">11k views  ·  6 months ago</p>
+                    </div>
+                </div>
+                <div class="aside__recommended__channels">
+                        <h3 class="recommended__channels__title">Recommended channel</h3>
+                        <div>
+                            <img src="./images/channelAva1.png" alt="">
+                            <p>Flora Benson</p>
+                        </div>
+                        <div>
+                            <img src="./images/channelAva2.png" alt="">
+                            <p>Violet Cobb</p>
+                        </div>
+                        <div>
+                            <img src="./images/channelAva3.png" alt="">
+                            <p>Phillip Mullins</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__channel">
+                <div class="main__channel_info">
+                    <button class="channel_info__logo">
+                        <p class="recommended__name__channel">Margaret Phelps videos</p>
+                    </button>
+                    <div class="slider__buttons">
+                        <button><img src="images/leftArrow.svg" alt=""></button>
+                        <button><img src="images/rightArrow.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="channel__video">
+                    <div class="video__block">
+                        <div class="video__image__container">
+                            <img class="video__image" src="images/videoCover16.png" alt="">
+                            <div class="video___rectangle__container">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes">4:15</p>
+                            </div>
+                        </div>
 
+                        <p class="video__name">A Brief History Of Creation</p>
+                        <div class="video__info">
+                            <p>80k views  ·  3 days ago</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video__block">
+                        <div class="video__image__container">
+                            <img class="video__image" src="images/videoCover17.png" alt="">
+                            <div class="video___rectangle__container">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes">8:00</p>
+                            </div>
+                        </div>
+
+                        <p class="video__name">Selecting The Right Hotel</p>
+                        <div class="video__info">
+                            <p>123k views  ·  1 months ago</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video__block">
+                        <div class="video__image__container">
+                            <img class="video__image" src="images/videoCover18.png" alt="">
+                            <div class="video___rectangle__container">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes">5:32</p>
+                            </div>
+                        </div>
+
+                        <p class="video__name">Asteroids</p>
+                        <div class="video__info">
+                            <p>43k views  ·  12 days ago</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video__block">
+                        <div class="video__image__container">
+                            <img class="video__image" src="images/videoCover14.png" alt="">
+                            <div class="video___rectangle__container">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes">6:40</p>
+                            </div>
+                        </div>
+
+                        <p class="video__name">Telescopes 101</p>
+                        <div class="video__info">
+                            <p>11k views  ·  6 months ago</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video__block">
+                        <div class="video__image__container">
+                            <img class="video__image" src="images/videoCover19.png" alt="">
+                            <div class="video___rectangle__container">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes">1:45</p>
+                            </div>
+                        </div>
+
+                        <p class="video__name">Medical Care Is Just</p>
+                        <div class="video__info">
+                            <p>18k views  ·  2 days ago</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </div>
+                    <div class="video__block">
+                        <div class="video__image__container">
+                            <img class="video__image" src="images/videoCover20.png" alt="">
+                            <div class="video___rectangle__container">
+                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                <p class="video__timecodes">2:12</p>
+                            </div>
+                        </div>
+
+                        <p class="video__name">Moon Gazing</p>
+                        <div class="video__info">
+                            <p>67k views  ·  4 months ago</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower__menu">
+                    <hr class="lower__menu__line">
+                    <div class="lower__menu__buttons">
+                        <button class="control__button">
+                            <img src="images/home.svg" alt="home icon">
+                            <p>Home</p>
+                        </button>
+                        <button class="control__button">
+                            <img src="images/trending.svg" alt="home icon">
+                            <p>Trending</p>
+                        </button>
+                        <button class="control__button">
+                            <img src="images/subscriptions.svg" alt="home icon">
+                            <p>Subscriptions</p>
+                        </button>
+                        <button class="control__button">
+                            <img src="images/library.svg" alt="home icon">
+                            <p>Library</p>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
