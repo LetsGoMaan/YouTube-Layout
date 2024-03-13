@@ -212,10 +212,10 @@
                     <div><a href="#">Videos</a></div>
                     <div><a href="#">Playlists</a></div>
                     <div class="section__list__arrowDown"><img src="./images/arrowDown.svg" alt=""></div>
-                    <div><a href="#">Channels</a></div>
-                    <div><a href="#">Discussion</a></div>
-                    <div><a href="#">About</a></div>
-                    <div><button>
+                    <div class="section__list__text"><a href="#">Channels</a></div>
+                    <div class="section__list__text"><a href="#">Discussion</a></div>
+                    <div class="section__list__text"><a href="#">About</a></div>
+                    <div class="section__list__search__icon"><button>
                         <svg class="search__video__icon" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <desc>
                                 Created with Pixso.
@@ -246,141 +246,143 @@
                 </div>
                 <div class="aside__recommended__channels">
                         <h3 class="recommended__channels__title">Recommended channel</h3>
-                        <div>
+                        <div class="recommended__channels__blocks">
                             <img src="./images/channelAva1.png" alt="">
                             <p>Flora Benson</p>
                         </div>
-                        <div>
+                        <div class="recommended__channels__blocks">
                             <img src="./images/channelAva2.png" alt="">
                             <p>Violet Cobb</p>
                         </div>
-                        <div>
+                        <div class="recommended__channels__blocks">
                             <img src="./images/channelAva3.png" alt="">
                             <p>Phillip Mullins</p>
                     </div>
                 </div>
             </div>
-            <div class="main__channel">
-                <div class="main__channel_info">
-                    <button class="channel_info__logo">
-                        <p class="recommended__name__channel">Margaret Phelps videos</p>
-                    </button>
-                    <div class="slider__buttons">
-                        <button><img src="images/leftArrow.svg" alt=""></button>
-                        <button><img src="images/rightArrow.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="channel__video">
-                    <div class="video__block">
-                        <div class="video__image__container">
-                            <img class="video__image" src="images/videoCover16.png" alt="">
-                            <div class="video___rectangle__container">
-                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
-                                <p class="video__timecodes">4:15</p>
-                            </div>
-                        </div>
-
-                        <p class="video__name">A Brief History Of Creation</p>
-                        <div class="video__info">
-                            <p>80k views  ·  3 days ago</p>
-                            <p>Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video__block">
-                        <div class="video__image__container">
-                            <img class="video__image" src="images/videoCover17.png" alt="">
-                            <div class="video___rectangle__container">
-                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
-                                <p class="video__timecodes">8:00</p>
-                            </div>
-                        </div>
-
-                        <p class="video__name">Selecting The Right Hotel</p>
-                        <div class="video__info">
-                            <p>123k views  ·  1 months ago</p>
-                            <p>Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video__block">
-                        <div class="video__image__container">
-                            <img class="video__image" src="images/videoCover18.png" alt="">
-                            <div class="video___rectangle__container">
-                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
-                                <p class="video__timecodes">5:32</p>
-                            </div>
-                        </div>
-
-                        <p class="video__name">Asteroids</p>
-                        <div class="video__info">
-                            <p>43k views  ·  12 days ago</p>
-                            <p>Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video__block">
-                        <div class="video__image__container">
-                            <img class="video__image" src="images/videoCover14.png" alt="">
-                            <div class="video___rectangle__container">
-                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
-                                <p class="video__timecodes">6:40</p>
-                            </div>
-                        </div>
-
-                        <p class="video__name">Telescopes 101</p>
-                        <div class="video__info">
-                            <p>11k views  ·  6 months ago</p>
-                            <p>Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video__block">
-                        <div class="video__image__container">
-                            <img class="video__image" src="images/videoCover19.png" alt="">
-                            <div class="video___rectangle__container">
-                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
-                                <p class="video__timecodes">1:45</p>
-                            </div>
-                        </div>
-
-                        <p class="video__name">Medical Care Is Just</p>
-                        <div class="video__info">
-                            <p>18k views  ·  2 days ago</p>
-                            <p>Dollie Blair</p>
-                        </div>
-                    </div>
-                    <div class="video__block">
-                        <div class="video__image__container">
-                            <img class="video__image" src="images/videoCover20.png" alt="">
-                            <div class="video___rectangle__container">
-                                <img class="video__rectangle" src="images/rectangle.svg" alt="">
-                                <p class="video__timecodes">2:12</p>
-                            </div>
-                        </div>
-
-                        <p class="video__name">Moon Gazing</p>
-                        <div class="video__info">
-                            <p>67k views  ·  4 months ago</p>
-                            <p>Dollie Blair</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="lower__menu">
-                    <hr class="lower__menu__line">
-                    <div class="lower__menu__buttons">
-                        <button class="control__button">
-                            <img src="images/home.svg" alt="home icon">
-                            <p>Home</p>
+            <div class="container__hidden">
+                <div class="main__channel">
+                    <div class="main__channel_name__logo">
+                        <button class="channel_info__logo">
+                            <p class="recommended__name__channel">Margaret Phelps videos</p>
                         </button>
-                        <button class="control__button">
-                            <img src="images/trending.svg" alt="home icon">
-                            <p>Trending</p>
-                        </button>
-                        <button class="control__button">
-                            <img src="images/subscriptions.svg" alt="home icon">
-                            <p>Subscriptions</p>
-                        </button>
-                        <button class="control__button">
-                            <img src="images/library.svg" alt="home icon">
-                            <p>Library</p>
-                        </button>
+                        <div class="slider__buttons">
+                            <button><img src="images/leftArrow.svg" alt=""></button>
+                            <button><img src="images/rightArrow.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="channel__video">
+                        <div class="video__block">
+                            <div class="video__image__container">
+                                <img class="video__image" src="images/videoCover16.png" alt="">
+                                <div class="video___rectangle__container">
+                                    <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                    <p class="video__timecodes">4:15</p>
+                                </div>
+                            </div>
+
+                            <p class="video__name">A Brief History Of Creation</p>
+                            <div class="video__info">
+                                <p>80k views  ·  3 days ago</p>
+                                <p>Dollie Blair</p>
+                            </div>
+                        </div>
+                        <div class="video__block">
+                            <div class="video__image__container">
+                                <img class="video__image" src="images/videoCover17.png" alt="">
+                                <div class="video___rectangle__container">
+                                    <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                    <p class="video__timecodes">8:00</p>
+                                </div>
+                            </div>
+
+                            <p class="video__name">Selecting The Right Hotel</p>
+                            <div class="video__info">
+                                <p>123k views  ·  1 months ago</p>
+                                <p>Dollie Blair</p>
+                            </div>
+                        </div>
+                        <div class="video__block">
+                            <div class="video__image__container">
+                                <img class="video__image" src="images/videoCover18.png" alt="">
+                                <div class="video___rectangle__container">
+                                    <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                    <p class="video__timecodes">5:32</p>
+                                </div>
+                            </div>
+
+                            <p class="video__name">Asteroids</p>
+                            <div class="video__info">
+                                <p>43k views  ·  12 days ago</p>
+                                <p>Dollie Blair</p>
+                            </div>
+                        </div>
+                        <div class="video__block">
+                            <div class="video__image__container">
+                                <img class="video__image" src="images/videoCover14.png" alt="">
+                                <div class="video___rectangle__container">
+                                    <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                    <p class="video__timecodes">6:40</p>
+                                </div>
+                            </div>
+
+                            <p class="video__name">Telescopes 101</p>
+                            <div class="video__info">
+                                <p>11k views  ·  6 months ago</p>
+                                <p>Dollie Blair</p>
+                            </div>
+                        </div>
+                        <div class="video__block">
+                            <div class="video__image__container">
+                                <img class="video__image" src="images/videoCover19.png" alt="">
+                                <div class="video___rectangle__container">
+                                    <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                    <p class="video__timecodes">1:45</p>
+                                </div>
+                            </div>
+
+                            <p class="video__name">Medical Care Is Just</p>
+                            <div class="video__info">
+                                <p>18k views  ·  2 days ago</p>
+                                <p>Dollie Blair</p>
+                            </div>
+                        </div>
+                        <div class="video__block">
+                            <div class="video__image__container">
+                                <img class="video__image" src="images/videoCover20.png" alt="">
+                                <div class="video___rectangle__container">
+                                    <img class="video__rectangle" src="images/rectangle.svg" alt="">
+                                    <p class="video__timecodes">2:12</p>
+                                </div>
+                            </div>
+
+                            <p class="video__name">Moon Gazing</p>
+                            <div class="video__info">
+                                <p>67k views  ·  4 months ago</p>
+                                <p>Dollie Blair</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower__menu">
+                        <hr class="lower__menu__line">
+                        <div class="lower__menu__buttons">
+                            <button class="control__button">
+                                <img src="images/home.svg" alt="home icon">
+                                <p>Home</p>
+                            </button>
+                            <button class="control__button">
+                                <img src="images/trending.svg" alt="home icon">
+                                <p>Trending</p>
+                            </button>
+                            <button class="control__button">
+                                <img src="images/subscriptions.svg" alt="home icon">
+                                <p>Subscriptions</p>
+                            </button>
+                            <button class="control__button">
+                                <img src="images/library.svg" alt="home icon">
+                                <p>Library</p>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

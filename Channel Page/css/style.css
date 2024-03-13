@@ -33,14 +33,19 @@ ul {
 
 .container {
     max-width: 1920px;
-    margin-left: 3.2rem;
+    /*margin-left: 3.2rem;*/
+    /*overflow: hidden;*/
+}
+
+.container__hidden {
+    max-width: 1920px;
     overflow: hidden;
 }
 
 .header {
     display: flex;
     align-items: center;
-    margin: 2rem 7rem 5rem 0;
+    margin: 2rem 7rem 5rem 3.2rem;
     justify-content: space-between;
 }
 
@@ -105,7 +110,8 @@ ul {
 
 .sidebar {
     max-width: 100%;
-    margin-right: 6.6rem
+    margin-right: 6.6rem;
+    margin-left: 3.2rem;
 }
 
 .control__panel {
@@ -176,21 +182,28 @@ ul {
 }
 
 .channel__cover {
-    max-width: 159.5rem;
     margin-bottom: 3rem;
+    margin-right: 7rem;
     border-radius: 1.4rem;
 }
 
 .main__img {
-    max-width: 159.5rem;
+    max-width: 100%;
+    min-height: 10rem;
+}
+
+.main__channel {
+    position: relative;
+    margin-right: 7rem;
+    overflow: hidden;
 }
 
 .main__channel_info {
-    max-width: 159.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+    margin-right: 7rem;
 }
 
 .name__avatar {
@@ -213,6 +226,7 @@ ul {
 
 .sections__list {
     display: flex;
+    gap: 7rem
 }
 
 .sections__list div:first-child a {
@@ -222,7 +236,6 @@ ul {
 }
 
 .sections__list div {
-    margin-right: 7rem;
     font-family: Mulish,sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
@@ -255,7 +268,6 @@ ul {
 
 
 .video__and__channels__section {
-    max-width: 159.5rem;
     margin-bottom: 6rem;
 }
 
@@ -292,11 +304,13 @@ ul {
     display: flex;
     gap: 1rem;
     position: absolute;
-    right: 15rem;
+    right: 18rem;
 }
 
 .video__block {
     max-width: 25rem;
+    flex: 0 0 400px;
+
 }
 
 .video__image__container {
@@ -306,7 +320,6 @@ ul {
 
 .video__image {
     display: block;
-    max-width: 25rem;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -388,7 +401,8 @@ ul {
 }
 
 .video__imageBig {
-    max-width: 54rem;
+    /*max-width: 54rem;*/
+    width: 100%;
 }
 
 .video__rectangle__container__bigImg {
@@ -440,6 +454,7 @@ ul {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    margin-right: 16rem;
 }
 .main__video__block {
     display: flex;
@@ -492,11 +507,36 @@ ul {
     color: #C2C2C2;
 }
 
+.recommended__channels__blocks {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.recommended__channels__blocks p {
+    font-family: Mulish, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+
+}
+
+.main__channel_name__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-right: 7rem;
+}
+
 @media (max-width: 1850px) {
-    .main__channel_info {
-        justify-content: flex-start;
-        gap: 50rem;
-    }
+    /*.video__and__channels__section {*/
+    /*    margin-right: 8rem;*/
+    /*}*/
+    /*.main__channel_info {*/
+    /*    justify-content: flex-start;*/
+    /*    gap: 50rem;*/
+    /*}*/
 }
 
 @media (max-width: 1440px) {
@@ -505,6 +545,9 @@ ul {
     }
     .aside__recommended__channels {
         display: none;
+    }
+    .video__and__channels__section {
+        margin-right: 0;
     }
 }
 
@@ -519,9 +562,30 @@ ul {
     .main__video__block {
         flex-direction: column;
     }
+
+    .main__channel,.main__channel_name__logo {
+        margin-right: 0;
+    }
     .main__channel_info {
 
-        gap: 15rem;
+        /*gap: 15rem;*/
+    }
+    .sections__list {
+        gap:3rem;
+    }
+
+    .channel__video {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .slider__buttons {
+        display: none;
+    }
+
+    .video__block {
+        flex: 0 0 0;
     }
 }
 
@@ -535,15 +599,38 @@ ul {
     }
     .main__channel_info {
 
-        gap: 2.5rem;
+    }
+    .section__list__text {
+        display: none;
+    }
+    .video__and__channels__section {
+        margin-right: 3rem;
+        gap: 0;
     }
 
+    .channel__video {
+
+    }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 875px) {
+    .main__channel_info,.channel__cover {
+        margin-right: 3rem;
+    }
+}
+
+    @media (max-width: 768px) {
     .channel__video {
         margin-bottom: 1.5rem;
+    }
+    .container {
+        margin-left: 0;
+        overflow: hidden;
+    }
+
+    .header {
+        margin-left: 3.2rem;
     }
 
     .search__bar,
@@ -565,6 +652,18 @@ ul {
         align-items: center;
         gap: 3rem;
     }
+    .channel__cover {
+        margin-right: 0rem;
+    }
+
+    .main__channel {
+        margin-left: 2rem;
+    }
+
+    .main__channel_info, .main__channel__sections,.video__and__channels__section {
+        margin-left: 2rem;
+    }
+
 
 
 }
@@ -572,11 +671,14 @@ ul {
 @media (max-width: 576px) {
     .main__channel {
         margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
     }
     .main__channel_info {
-        flex-direction: column;
-        align-items: flex-start;
         margin-left: 1.6rem;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
     }
     .bell__button {
         display: none;
@@ -640,7 +742,7 @@ ul {
         margin-left: 1.3rem;
     }
     .sections__list div {
-        margin-right: 4rem;
+        /*margin-right: 4rem;*/
     }
     .section__list div a {
         font-size: 1.4rem;
@@ -648,12 +750,16 @@ ul {
 }
 
 @media (max-width: 320px) {
+.name__avatar {
+    position: relative;
+    margin-left: 0;
+}
+
 .channel__info__ava {
     width: 7rem;
     margin-right: 2rem;
     position: absolute;
-    top: 25%;
-    left: 5%;
+    bottom:100%;
     }
     .main__info {
         margin-left: 1.6rem;
@@ -665,7 +771,9 @@ ul {
     .main__channel_info {
         margin-top: 4rem;
     }
-
+    .section__list__search__icon {
+        display: none;
+    }
 
 }
 
